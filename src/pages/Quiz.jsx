@@ -18,7 +18,8 @@ const QuizPage = () => {
   const [quizFinished, setQuizFinished] = useState(false);
   const [completedQuiz, setCompletedQuiz] = useState(null);
   const { user } = React.useContext(AuthContext);
-  const GEMINI_API_URL = "http://localhost:8080/gemini"; // Replace with your actual Gemini API endpoint
+  const GEMINI_API_URL =
+    "https://vercel.com/computemans-projects/quiz-generator-backend-express-firebase/gemini"; // Replace with your actual Gemini API endpoint
 
   const fetchQuiz = useCallback(
     async (selectedTopic) => {
